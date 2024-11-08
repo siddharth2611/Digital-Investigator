@@ -21,7 +21,4 @@
         android:id="@+id/fcom"
         android:title="File Completion"/>
 
-
-
-
 </menu>

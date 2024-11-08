@@ -7,10 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="orange">#FFA500</color>
+    <color name="orange">#FD7301</color>
     <color name="progress_active">#FFA500</color>
     <color name="progress_inactive">#80FFFFFF</color>
     <color name="transparent_white">#33FFFFFF</color>
     <color name="gray">#808080</color>
     <color name="dgray">#464647</color>
+    <color name="bshade">#0A0A0D</color>
 </resources>

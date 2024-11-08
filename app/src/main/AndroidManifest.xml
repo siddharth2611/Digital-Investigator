@@ -14,6 +14,45 @@
         android:theme="@style/Theme.DigitalInvestigator"
         tools:targetApi="31">
         <activity
+            android:name=".CaseCompActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CompleteActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".CompleteActivty"
+            android:exported="false" />
+        <activity
+            android:name=".ConstructionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DegEviActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrecautionActivty3"
+            android:exported="false" />
+        <activity
+            android:name=".PrecautionActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".PrecautionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PredicitionActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".PredictionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InvestigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CaseRegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CaseConfirmationActivity"
+            android:exported="false" />
+        <activity
             android:name=".Notifications_Activity"
             android:exported="false" />
         <activity

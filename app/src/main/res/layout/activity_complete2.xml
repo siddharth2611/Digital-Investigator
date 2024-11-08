@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/compl"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Profile Detail Section -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="17dp"
+            android:background="@drawable/circle_shape"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ips" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/officer_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Investigation Officer"
+                android:textColor="@color/dgray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/officer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="IPS Seema Gupta"
+                android:textColor="@color/dgray"
+                android:textSize="21sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Centered Title TextView -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Complete the file"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!-- EditText Section -->
+    <EditText
+        android:id="@+id/prepare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_border"
+        android:gravity="top"
+        android:padding="10dp"
+        android:minHeight="430dp" />
+
+    <!-- Centered Download Button -->
+    <Button
+        android:id="@+id/btn_prepare"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded"
+        android:text="Prepare"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+</LinearLayout>

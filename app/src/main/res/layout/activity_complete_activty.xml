@@ -1,0 +1,132 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bshade"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Profile Detail Section -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="-17dp"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="17dp"
+            android:background="@drawable/circle_shape"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ips" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/officer_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Investigation Officer"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/officer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="IPS Seema Gupta"
+                android:textColor="#FFFFFF"
+                android:textSize="21sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Investigation Image Section with Centered Text -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/complete_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/complete" />
+
+        <TextView
+            android:id="@+id/investigation_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Complete the file"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <!-- Case ID Label and Input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Case ID"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/case_id3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:inputType="text"
+        android:textSize="16sp" />
+
+    <!-- Case Description Label and Input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Enter the other Details"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/enter_details"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:inputType="textMultiLine"
+        android:textSize="16sp" />
+
+    <!-- Predict Buttons -->
+    <Button
+        android:id="@+id/complete_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded"
+        android:text="Complete"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+</LinearLayout>

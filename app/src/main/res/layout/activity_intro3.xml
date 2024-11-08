@@ -1,0 +1,115 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/backgroundImage3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dbg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <TextView
+        android:id="@+id/titleText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Advanced Analytics"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroundImage3"
+        app:layout_constraintVertical_bias="0.529" />
+
+    <TextView
+        android:id="@+id/contentext3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="One step ahead from the criminal"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText3"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <LinearLayout
+        android:id="@+id/introProgress3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundImage3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroundImage3"
+        app:layout_constraintVertical_bias="0.652">
+
+        <View
+            android:id="@+id/progressItem1"
+            android:layout_width="40dp"
+            android:layout_height="5dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/progress_inactive" />
+
+        <View
+            android:id="@+id/progressItem2"
+            android:layout_width="40dp"
+            android:layout_height="5dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/progress_inactive" />
+
+        <View
+            android:id="@+id/progressItem3"
+            android:layout_width="40dp"
+            android:layout_height="5dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/progress_inactive" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="116dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/introProgress3"
+        app:layout_constraintVertical_bias="0.954">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStart2"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/rounded"
+            android:text="Start"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

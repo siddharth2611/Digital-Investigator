@@ -14,6 +14,7 @@ lifecycleViewmodelKtx = "2.8.5"
 navigationFragmentKtx = "2.6.0"
 navigationUiKtx = "2.6.0"
 
+//libraries
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }

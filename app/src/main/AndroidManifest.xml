@@ -13,76 +13,47 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DigitalInvestigator"
         tools:targetApi="31">
-        <activity
-            android:name=".CaseCompActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CompleteActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".CompleteActivty"
-            android:exported="false" />
-        <activity
-            android:name=".ConstructionActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DegEviActivity"
-            android:exported="false" />
-        <activity
-            android:name=".PrecautionActivty3"
-            android:exported="false" />
-        <activity
-            android:name=".PrecautionActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".PrecautionActivity"
-            android:exported="false" />
-        <activity
-            android:name=".PredicitionActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".PredictionActivity"
-            android:exported="false" />
-        <activity
-            android:name=".InvestigationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CaseRegistrationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CaseConfirmationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Notifications_Activity"
-            android:exported="false" />
-        <activity
-            android:name=".DrawerActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DashboardActivity2"
-            android:exported="true" />
-        <activity
-            android:name=".IntroActivity3"
-            android:exported="false" />
-        <activity
-            android:name=".IntroActivity2"
-            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".SignInActivity"
-            android:exported="true" />
-        <activity
-            android:name=".IntroActivity"
-            android:exported="true" />
+
+        <!-- Activities for the main app flow -->
+        <activity android:name=".DrawerActivity" android:exported="false" />
+        <activity android:name=".DashboardActivity2" android:exported="true" />
+
+        <!-- Sign-in and Intro activities -->
+        <activity android:name=".SignInActivity" android:exported="true" />
+        <activity android:name=".IntroActivity" android:exported="true" />
+        <activity android:name=".IntroActivity2" android:exported="false" />
+        <activity android:name=".IntroActivity3" android:exported="false" />
+
+        <!-- Case handling activities -->
+        <activity android:name=".CaseRegistrationActivity" android:exported="false" />
+        <activity android:name=".CaseConfirmationActivity" android:exported="false" />
+        <activity android:name=".CaseCompActivity" android:exported="false" />
+
+        <!-- Investigation activities -->
+        <activity android:name=".InvestigationActivity" android:exported="false" />
+        <activity android:name=".PredictionActivity" android:exported="false" />
+        <activity android:name=".PrecautionActivity" android:exported="false" />
+
+        <!-- Miscellaneous activities -->
+        <activity android:name=".DegEviActivity" android:exported="false" />
+        <activity android:name=".Notifications_Activity" android:exported="false" />
+        <activity android:name=".ConstructionActivity" android:exported="false" />
+        <activity android:name=".CompleteActivty" android:exported="false" />
+        <activity android:name=".CompleteActivity2" android:exported="false" />
+        <activity android:name=".PrecautionActivity2" android:exported="false" />
+        <activity android:name=".PrecautionActivty3" android:exported="false" />
+        <activity android:name=".PredicitionActivity2" android:exported="false" />
+
     </application>
 
 </manifest>

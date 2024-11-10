@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/main"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
+    android:background="@color/bshade"
+    android:id="@+id/main">
 
     <!-- Top Black Section (1/3rd of screen) -->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -71,6 +71,7 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/easytext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Easier!"
@@ -78,37 +79,161 @@
                 android:textSize="28sp"
                 android:textStyle="bold"/>
         </LinearLayout>
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- Bottom White Section (2/3rd of screen) -->
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <!-- Scrollable White Section (2/3rd of screen) -->
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@color/white"
+        android:layout_marginTop="16dp"
         app:layout_constraintTop_toBottomOf="@id/topSection"
         app:layout_constraintBottom_toBottomOf="parent">
 
-        <!-- Current Status Card -->
-        <androidx.cardview.widget.CardView
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginTop="24dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="4dp"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="wrap_content"
+            android:background="@color/bshade">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Current Status"
-                android:layout_gravity="center"
-                android:textSize="18sp"
-                android:textColor="@color/black"
-                android:padding="16dp"/>
-        </androidx.cardview.widget.CardView>
+            <!-- FrameLayouts for Image Buttons -->
+            <FrameLayout
+                android:id="@+id/CaseRFrame"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toTopOf="parent">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                <ImageView
+                    android:id="@+id/caser_image"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/caser"
+                    android:contentDescription="Precaution Image"/>
+
+                <TextView
+                    android:id="@+id/caser_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Case Registration"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/investigationFrame"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/CaseRFrame">
+
+                <ImageView
+                    android:id="@+id/investigation_image"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/invest"
+                    android:contentDescription="Investigation Image"/>
+
+                <TextView
+                    android:id="@+id/investigation_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Investigation"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/precFrame"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/investigationFrame">
+
+                <ImageView
+                    android:id="@+id/precaution_image"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/invest"
+                    android:contentDescription="Precaution Image"/>
+
+                <TextView
+                    android:id="@+id/prec_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Precaution"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+            </FrameLayout>
+
+            <!-- New Image Buttons for Digital Evidence Room and Complete -->
+            <FrameLayout
+                android:id="@+id/digitalEvidenceFrame"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/precFrame">
+
+                <ImageView
+                    android:id="@+id/digital_evidence_image"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/digital"
+                    android:contentDescription="Digital Evidence Room"/>
+
+                <TextView
+                    android:id="@+id/digital_evidence_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Digital Evidence Room"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/completeFrame"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/digitalEvidenceFrame">
+
+                <ImageView
+                    android:id="@+id/complete_image"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/complete"
+                    android:contentDescription="Complete"/>
+
+                <TextView
+                    android:id="@+id/complete_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Complete"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
